@@ -15,455 +15,7 @@
       rel="stylesheet"
     />
 
-    <!-- ! Internat styes -->
-    <style>
-      /* insert styles here */
-      :root {
-        --primary-color: #1a1a1a;
-        --secondary-color: #6c757d;
-        --accent-color: #4caf50;
-        --light-bg-color: #325374; /* inline comment */
-        --white: #ffffff; /*  */
-        --border-radius: 0.5rem;
-        --transition-speed: 0.3s; /* 8px border radius */
-        font-size: 100%;
-      }
-
-      /* Base styling & Font Application */
-
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        font-family: "Lato", sans-serif;
-        line-height: 1.6;
-        color: var(--primary-color);
-        background-color: var(--white);
-        scroll-behavior: smooth;
-      }
-
-      .section-padding {
-        padding: 0.25rem 1.25rem;
-        max-width: 75rem;
-        margin: 0 auto;
-      }
-
-      h2 {
-        font-size: 2.5rem;
-        text-align: center;
-        margin-bottom: 3.75rem;
-        color: var(--primary-color);
-      }
-
-      /* Navigation */
-
-      nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0.9375rem 1.25rem;
-        background-color: var(--white);
-        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-      }
-
-      /* Descendent Selector */
-      nav a {
-        margin: 0 0.9375rem;
-        text-decoration: none;
-        color: var(--primary-color);
-        font-weight: 600;
-        transition: color var(--transition-speed);
-      }
-
-      nav a:hover {
-        color: var(--accent-color);
-      }
-
-      /* Landing section */
-      #landing {
-        min-height: 80dvh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color: var(--light-bg-color);
-        border-radius: 2rem 2rem 2rem 2rem;
-      }
-
-      .landing-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.25rem;
-        padding: 2.5rem;
-      }
-
-      .profile-pic-large{
-        width: 9.375rem;
-        height: 9.375rem;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 0.2rem solid var(--primary-color);
-        margin-bottom: 0.625rem;
-
-      }
-
-      .landing-content h1{
-        font-size: 3.75rem;
-        font-weight: 700;
-
-      }
-
-      .landing-content p{
-        font-size: 1.2rem;
-        color: var(--secondary-color);
-        margin-bottom: 1.25rem;
-      }
-
-      .cta-group a{
-        display: inline-block;
-        padding: 0.625rem 1.5625rem;
-        margin: 0 0.625rem;
-        text-decoration: none;
-        border-radius: var(--border-radius);
-        font-weight: 600;
-        transition: all var(--transition-speed);
-        border: 0.125rem solid var(--primary-color);
-      }
-
-      .primary-cta{
-        background-color: var(--primary-color);
-        color: var(--white)
-      }
-
-      .primary-cta:hover{
-        background-color: : var(--accent-color);
-        border-color: var(--white);
-        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-
-      }
-
-      .secondary-cta{
-        background-color: pink;
-        color: var(--white)
-      }
-
-
-      /* ---2 About me Section  --- */
-      #about {
-        background-color: : var(--white);
-      }
-
-      .about-grid{
-        display: flex;
-        gap: 2.5rem;
-        align-items: flex-start;
-      }
-
-      .about-image{
-        flex:1;
-        text-align: center;
-      }
-
-      .about-image img{
-        width: 100%;
-        max-width: 18.75rem;
-        border-radius: var(--border-radius);
-
-      }
-
-      .about-text{
-        flex: 2;
-      }
-
-      .about-text h3{
-        font-size: 1.8rem;
-        font-weight: lighter;
-        font-size: italic;
-        margin-bottom: 0.9375rem;
-
-      }
-
-      
-
-      .info-card-container{
-        display: flex;
-        gap: 1.25rem;
-        margin: 1.5625rem 0;
-      }
-
-      .info-card{
-        flex: 1;
-        padding: 1.25rem;
-        border: 0.0625;
-        border-radius: var(--border-radius);
-        text-align: center;
-        background-color: var(--light-bg-color);
-        box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.05);
-      }
-
-      .info-card h4{
-        font-size: 1.2rem;
-        color: var(--accent-color);
-        margin-bottom: 0.3125rem;
-      }
-
-      /*. --- 3 Experience section --*/
-
-      #experience{
-        background-color: var(--light-bg-color);
-      }
-
-      .experience-container{
-        display: flex;
-        gap: 2.5rem;
-        justify-content: center;
-      }
-
-      .experience-card{
-        flex: 1;
-        min-width: 18.75rem;
-        padding: 1.875rem;
-        background-color: var(--white);
-        border-radius: var(--border-radius);
-        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.05);
-        text-align: center;
-      }
-
-      .experience-card h3{
-        color: var(--primary-color);
-        margin-bottom: 1.5625rem;
-        border-bottom: 0.125rem solid var(--accent-color);
-        padding-bottom: 0.625rem;
-        display: inline-block;
-      }
-
-      .skill-list{
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: left;
-        margin-top: 0.9375rem;
-      }
-
-      .skill-list li{
-        width: calc(50% - 0.625rem);
-        font-weight: 400;
-        display: flex;
-        align-items: center;
-      }
-
-      .skill-list li::before{
-        content: "°";
-        color: var(--accent-color);
-        font-size: 1.2rem;
-        margin-right: 0.625rem;
-      }  
-
-
-
-      .projects-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.875rem; /* Converted from 30px */
-        justify-content: center;
-      }
-
-      .project-card {
-        flex-basis: calc(33.333% - 1.25rem); /* Converted from 20px */
-        min-width: 17.5rem; /* Converted from 280px */
-        background-color: var(--white);
-        border-radius: var(--border-radius);
-        box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.1); /* Converted from 0 4px 15px */
-        overflow: hidden;
-        transition: transform var(--transition-speed);
-      }
-
-      .project-card:hover {
-        transform: translateY(-0.3125rem); /* Converted from -5px */
-      }
-
-      .project-image {
-        width: 100%;
-        height: 12.5rem; /* Converted from 200px */
-        background-color: var(--light-bg-color);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem; /* Converted from 1.5em */
-        color: var(--secondary-color);
-      }
-
-      .project-details {
-        padding: 1.25rem; /* Converted from 20px */
-      }
-
-      .project-details h3 {
-        font-size: 1.5rem; /* Converted from 1.5em */
-        margin-bottom: 0.625rem; /* Converted from 10px */
-        text-align: left;
-      }
-
-      .project-details p {
-        color: var(--secondary-color);
-        margin-bottom: 0.9375rem; /* Converted from 15px */
-        font-size: 0.95rem; /* Converted from 0.95em */
-      }
-
-      .project-links a {
-        display: inline-block;
-        margin-right: 0.9375rem; /* Converted from 15px */
-        color: var(--accent-color);
-        text-decoration: none;
-        font-weight: 600;
-      }
-
-      /* --- 5. CONTACT ME SECTION --- */
-      #contact {
-        text-align: center;
-        background-color: var(--light-bg-color);
-      }
-
-      #contact p {
-        font-size: 1.2rem; /* Converted from 1.2em */
-        margin-bottom: 1.875rem; /* Converted from 30px */
-        color: var(--secondary-color);
-      }
-
-      .contact-links a {
-        display: inline-flex;
-        align-items: center;
-        padding: 0.75rem 1.5625rem; /* Converted from 12px 25px */
-        margin: 0 0.9375rem; /* Converted from 15px */
-        border: 0.125rem solid var(--primary-color); /* Converted from 2px */
-        border-radius: var(--border-radius);
-        text-decoration: none;
-        color: var(--primary-color);
-        font-weight: 600;
-        transition: all var(--transition-speed);
-      }
-
-      .contact-links a:hover {
-        background-color: var(--primary-color);
-        color: var(--white);
-      }
-
-      .contact-links a span {
-        margin-right: 0.625rem; /* Converted from 10px */
-        font-size: 1.2rem; /* Converted from 1.2em */
-      }
-
-      /* --- 6. FOOTER --- */
-      footer {
-        text-align: center;
-        padding: 1.25rem; /* Converted from 20px */
-        border-top: 0.0625rem solid #eee; /* Converted from 1px */
-        background-color: var(--white);
-      }
-
-      .footer-nav a {
-        margin: 0 0.625rem; /* Converted from 10px */
-        color: var(--secondary-color);
-        text-decoration: none;
-        transition: color var(--transition-speed);
-      }
-
-      .footer-nav a:hover {
-        color: var(--accent-color);
-      }
-
-      .copyright {
-        margin-top: 0.625rem; /* Converted from 10px */
-        font-size: 0.8rem; /* Converted from 0.8em */
-        color: var(--secondary-color);
-      }
-
-
-      @media(max-width: 37.5rem){
-        /* wrap the nav bar */
-        .section-padding{
-          padding: 3.125rem 0.9375rem;
-        }
-
-       
-
-        nav{
-          flex-wrap: wrap;
-        }
-
-        .about-grid{
-          flex-direction: column;
-        }
-        
-        .about-image{
-       
-          margin: 0 auto;
-        }
-
-        h2{
-          font-size: 2rem;
-        }
-
-
-        .landing-content h1{
-          font-size: 2.5rem;
-        }
-
-        .cta-group{
-          display: flex;
-          flex-direction: column;
-          gap:  0.625rem;
-        }
-
-        .cta-group a{
-          margin: 0;
-          width: 100%;
-        }
-
-        .contact-links a{
-          margin: 0.3125rem;
-
-        }
-
-
-      }
-
-        @media(max-width: 52.25rem){
-
-
-          h2{
-            font-size: 2rem;
-          }
-
-          .about-grid{
-            flex-direction: column;
-          }
-
-          .about-image{
-            margin: 0 auto;
-          }
-
-          .info-card-container{
-              flex-direction: column;
-          }
-
-        
-
-        }
-
-  
-
-    
-
-      }      
-
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
@@ -506,12 +58,12 @@
     <!-- ! End of Landing section -->
 
     <!-- ! Start of About Me section -->
-    
+
     <section id="about" class="section-padding">
       <h2>About Me</h2>
       <div class="about-grid">
         <div class="about-image">
-        <!-- My Pic -->
+          <!-- My Pic -->
           <img
             src="https://placehold.co/600x600/CCCCCC/6c757d?text=My+Portrait"
             alt="Placeholder for my Pic"
@@ -521,38 +73,32 @@
         <div class="about-text">
           <h3>My Passion? Efficiency in design and software engineering...</h3>
           <p>
-            Relentless problem solver, intrigued by the beauty of code Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit. Quod, harum vitae.
-            Repudiandae obcaecati, saepe quod cupiditate autem dolor officiis
-            sapiente vitae doloribus aliquam itaque quibusdam minima
+            Relentless problem solver, intrigued by the beauty of code Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Quod, harum
+            vitae. Repudiandae obcaecati, saepe quod cupiditate autem dolor
+            officiis sapiente vitae doloribus aliquam itaque quibusdam minima
             necessitatibus unde consequuntur inventore?
-        </p>
-      
-      
-        <div class="info-card-container">
-          <!-- Container cards  -->
-          <div class="info-card">
-            <h4>20+ years in mobile technology</h4>
-            <p>Marketing tech & Iot</p>
+          </p>
+
+          <div class="info-card-container">
+            <!-- Container cards  -->
+            <div class="info-card">
+              <h4>20+ years in mobile technology</h4>
+              <p>Marketing tech & Iot</p>
+            </div>
+            <div class="info-card">
+              <h4>BSC in Comp engineering</h4>
+              <p>Education</p>
+            </div>
           </div>
-          <div class="info-card">
-            <h4>BSC in Comp engineering</h4>
-            <p>Education</p>
-          </div>
+
+          <!-- Personal Quote -->
+          <p>
+            I beleive in the relentless pursuit of self improvment, in code and
+            thinking of solutions
+          </p>
         </div>
-        
-
-    
-      <!-- Personal Quote -->
-      <p>
-        I beleive in the relentless pursuit of self improvment, in code and
-        thinking of solutions
-      </p>
       </div>
-      </div>
-
-    
-      
     </section>
     <!-- ! End of About Me section -->
 
@@ -570,33 +116,26 @@
             <li>React</li>
             <li>Java</li>
             <li>SpringBoot (Maven)</li>
-            </ul>
+          </ul>
         </div>
 
-      <div class="experience-card">
-        <h3>Tools and Concepts</h3>
-        <ul class="skill-list">
-          <li>Version Control (Git, Github</li>
-          <li>Client Server Architectue</li>
-          <li>API development (Postman)</li>
-          <li>Unit testing</li>
-          <li> Visual Studio Code</li>
-          <li> IntelliJ Studio</li>
-        </ul>
+        <div class="experience-card">
+          <h3>Tools and Concepts</h3>
+          <ul class="skill-list">
+            <li>Version Control (Git, Github</li>
+            <li>Client Server Architectue</li>
+            <li>API development (Postman)</li>
+            <li>Unit testing</li>
+            <li>Visual Studio Code</li>
+            <li>IntelliJ Studio</li>
+          </ul>
+        </div>
       </div>
-      </div>
-    </section>  
-
-
-
-  
-
-
+    </section>
 
     <!-- ! End of Experience section -->
 
     <!-- ! Start of Projects section -->
-
 
     <!-- ! Start of Projects section -->
     <section id="projects" class="section-padding">
@@ -655,7 +194,7 @@
 
     <!-- ! Start of Contact section -->
 
-     <section id="contact" class="section-padding">
+    <section id="contact" class="section-padding">
       <h2>Contact Me</h2>
       <p>Let's connect!</p>
       <div class="contact-links">
