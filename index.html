@@ -155,15 +155,313 @@
       }
 
 
-      /* ---2 About me   --- */
+      /* ---2 About me Section  --- */
       #about {
         background-color: : var(--white);
       }
 
+      .about-grid{
+        display: flex;
+        gap: 2.5rem;
+        align-items: flex-start;
+      }
+
+      .about-image{
+        flex:1;
+        text-align: center;
+      }
+
+      .about-image img{
+        width: 100%;
+        max-width: 18.75rem;
+        border-radius: var(--border-radius);
+
+      }
+
+      .about-text{
+        flex: 2;
+      }
+
+      .about-text h3{
+        font-size: 1.8rem;
+        font-weight: lighter;
+        font-size: italic;
+        margin-bottom: 0.9375rem;
+
+      }
+
+      
+
+      .info-card-container{
+        display: flex;
+        gap: 1.25rem;
+        margin: 1.5625rem 0;
+      }
+
+      .info-card{
+        flex: 1;
+        padding: 1.25rem;
+        border: 0.0625;
+        border-radius: var(--border-radius);
+        text-align: center;
+        background-color: var(--light-bg-color);
+        box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.05);
+      }
+
+      .info-card h4{
+        font-size: 1.2rem;
+        color: var(--accent-color);
+        margin-bottom: 0.3125rem;
+      }
+
+      /*. --- 3 Experience section --*/
+
+      #experience{
+        background-color: var(--light-bg-color);
+      }
+
+      .experience-container{
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+      }
+
+      .experience-card{
+        flex: 1;
+        min-width: 18.75rem;
+        padding: 1.875rem;
+        background-color: var(--white);
+        border-radius: var(--border-radius);
+        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.05);
+        text-align: center;
+      }
+
+      .experience-card h3{
+        color: var(--primary-color);
+        margin-bottom: 1.5625rem;
+        border-bottom: 0.125rem solid var(--accent-color);
+        padding-bottom: 0.625rem;
+        display: inline-block;
+      }
+
+      .skill-list{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        margin-top: 0.9375rem;
+      }
+
+      .skill-list li{
+        width: calc(50% - 0.625rem);
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+      }
+
+      .skill-list li::before{
+        content: "°";
+        color: var(--accent-color);
+        font-size: 1.2rem;
+        margin-right: 0.625rem;
+      }  
 
 
 
+      .projects-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.875rem; /* Converted from 30px */
+        justify-content: center;
+      }
 
+      .project-card {
+        flex-basis: calc(33.333% - 1.25rem); /* Converted from 20px */
+        min-width: 17.5rem; /* Converted from 280px */
+        background-color: var(--white);
+        border-radius: var(--border-radius);
+        box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.1); /* Converted from 0 4px 15px */
+        overflow: hidden;
+        transition: transform var(--transition-speed);
+      }
+
+      .project-card:hover {
+        transform: translateY(-0.3125rem); /* Converted from -5px */
+      }
+
+      .project-image {
+        width: 100%;
+        height: 12.5rem; /* Converted from 200px */
+        background-color: var(--light-bg-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem; /* Converted from 1.5em */
+        color: var(--secondary-color);
+      }
+
+      .project-details {
+        padding: 1.25rem; /* Converted from 20px */
+      }
+
+      .project-details h3 {
+        font-size: 1.5rem; /* Converted from 1.5em */
+        margin-bottom: 0.625rem; /* Converted from 10px */
+        text-align: left;
+      }
+
+      .project-details p {
+        color: var(--secondary-color);
+        margin-bottom: 0.9375rem; /* Converted from 15px */
+        font-size: 0.95rem; /* Converted from 0.95em */
+      }
+
+      .project-links a {
+        display: inline-block;
+        margin-right: 0.9375rem; /* Converted from 15px */
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      /* --- 5. CONTACT ME SECTION --- */
+      #contact {
+        text-align: center;
+        background-color: var(--light-bg-color);
+      }
+
+      #contact p {
+        font-size: 1.2rem; /* Converted from 1.2em */
+        margin-bottom: 1.875rem; /* Converted from 30px */
+        color: var(--secondary-color);
+      }
+
+      .contact-links a {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.75rem 1.5625rem; /* Converted from 12px 25px */
+        margin: 0 0.9375rem; /* Converted from 15px */
+        border: 0.125rem solid var(--primary-color); /* Converted from 2px */
+        border-radius: var(--border-radius);
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: 600;
+        transition: all var(--transition-speed);
+      }
+
+      .contact-links a:hover {
+        background-color: var(--primary-color);
+        color: var(--white);
+      }
+
+      .contact-links a span {
+        margin-right: 0.625rem; /* Converted from 10px */
+        font-size: 1.2rem; /* Converted from 1.2em */
+      }
+
+      /* --- 6. FOOTER --- */
+      footer {
+        text-align: center;
+        padding: 1.25rem; /* Converted from 20px */
+        border-top: 0.0625rem solid #eee; /* Converted from 1px */
+        background-color: var(--white);
+      }
+
+      .footer-nav a {
+        margin: 0 0.625rem; /* Converted from 10px */
+        color: var(--secondary-color);
+        text-decoration: none;
+        transition: color var(--transition-speed);
+      }
+
+      .footer-nav a:hover {
+        color: var(--accent-color);
+      }
+
+      .copyright {
+        margin-top: 0.625rem; /* Converted from 10px */
+        font-size: 0.8rem; /* Converted from 0.8em */
+        color: var(--secondary-color);
+      }
+
+
+      @media(max-width: 37.5rem){
+        /* wrap the nav bar */
+        .section-padding{
+          padding: 3.125rem 0.9375rem;
+        }
+
+       
+
+        nav{
+          flex-wrap: wrap;
+        }
+
+        .about-grid{
+          flex-direction: column;
+        }
+        
+        .about-image{
+       
+          margin: 0 auto;
+        }
+
+        h2{
+          font-size: 2rem;
+        }
+
+
+        .landing-content h1{
+          font-size: 2.5rem;
+        }
+
+        .cta-group{
+          display: flex;
+          flex-direction: column;
+          gap:  0.625rem;
+        }
+
+        .cta-group a{
+          margin: 0;
+          width: 100%;
+        }
+
+        .contact-links a{
+          margin: 0.3125rem;
+
+        }
+
+
+      }
+
+        @media(max-width: 52.25rem){
+
+
+          h2{
+            font-size: 2rem;
+          }
+
+          .about-grid{
+            flex-direction: column;
+          }
+
+          .about-image{
+            margin: 0 auto;
+          }
+
+          .info-card-container{
+              flex-direction: column;
+          }
+
+        
+
+        }
+
+  
+
+    
+
+      }      
 
     </style>
   </head>
@@ -175,7 +473,6 @@
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contacts">Contacts</a>
-    
     </nav>
     <br />
 
@@ -188,7 +485,7 @@
           class="profile-pic-large"
         />
         <!-- Name and Designation -->
-        
+
         <!-- Greeting -->
         Hello, I&apos;m
 
@@ -209,60 +506,177 @@
     <!-- ! End of Landing section -->
 
     <!-- ! Start of About Me section -->
-    <!-- Insert HTML syntax here -->
-    <section class="section-padding">
-      <!-- Left Section -->
-      <h2>
-        <!-- Title -->
-        About Me
-      </h2>
-
-      <!-- Right Section -->
-
-      <div>
+    
+    <section id="about" class="section-padding">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-image">
         <!-- My Pic -->
-        <img
-          src="https://placehold.co/400x400/CCCCCC/6c757d?text=My+Portrait"
-          alt="Placeholder for my Pic"
-          class="profile-pic-large"
-        />
+          <img
+            src="https://placehold.co/600x600/CCCCCC/6c757d?text=My+Portrait"
+            alt="Placeholder for my Pic"
+          />
+        </div>
+
+        <div class="about-text">
+          <h3>My Passion? Efficiency in design and software engineering...</h3>
+          <p>
+            Relentless problem solver, intrigued by the beauty of code Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Quod, harum vitae.
+            Repudiandae obcaecati, saepe quod cupiditate autem dolor officiis
+            sapiente vitae doloribus aliquam itaque quibusdam minima
+            necessitatibus unde consequuntur inventore?
+        </p>
+      
+      
+        <div class="info-card-container">
+          <!-- Container cards  -->
+          <div class="info-card">
+            <h4>20+ years in mobile technology</h4>
+            <p>Marketing tech & Iot</p>
+          </div>
+          <div class="info-card">
+            <h4>BSC in Comp engineering</h4>
+            <p>Education</p>
+          </div>
+        </div>
+        
+
+    
+      <!-- Personal Quote -->
+      <p>
+        I beleive in the relentless pursuit of self improvment, in code and
+        thinking of solutions
+      </p>
+      </div>
       </div>
 
-      <div>
-        <!-- Title -->
-        <h3>My Passion? Efficiency in design and software engineering...</h3>
-        <p>
-          Relentless problem solver, intrigued by the beauty of code Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Quod, harum vitae.
-          Repudiandae obcaecati, saepe quod cupiditate autem dolor officiis
-          sapiente vitae doloribus aliquam itaque quibusdam minima
-          necessitatibus unde consequuntur inventore?
-        </p>
-        <!-- Descriptor -->
-      </div>
-      <div>
-        <!-- Container cards  -->
-        <h4>20+ years in mobile technology</h4>
-        <p>Marketing tech & Iot</p>
-      </div>
-      <div>
-        <h4>BSC in Comp engineering</h4>
-      </div>
-      <div>
-        <!-- Personal Quote -->
-      </div>
+    
+      
     </section>
     <!-- ! End of About Me section -->
 
     <!-- ! Start of Experience section -->
     <!-- Insert HTML syntax here -->
+    <section id="experience" class="section-padding">
+      <h2>Skills</h2>
+      <div class="experience-container">
+        <div class="experience-card">
+          <h3>Tech Stacks</h3>
+          <ul class="skill-list">
+            <li>HTML & Semantic Markup</li>
+            <li>CSS3 ( and Bootstrap</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Java</li>
+            <li>SpringBoot (Maven)</li>
+            </ul>
+        </div>
+
+      <div class="experience-card">
+        <h3>Tools and Concepts</h3>
+        <ul class="skill-list">
+          <li>Version Control (Git, Github</li>
+          <li>Client Server Architectue</li>
+          <li>API development (Postman)</li>
+          <li>Unit testing</li>
+          <li> Visual Studio Code</li>
+          <li> IntelliJ Studio</li>
+        </ul>
+      </div>
+      </div>
+    </section>  
+
+
+
+  
+
+
+
     <!-- ! End of Experience section -->
 
     <!-- ! Start of Projects section -->
+
+
+    <!-- ! Start of Projects section -->
+    <section id="projects" class="section-padding">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">Project 1</div>
+          <div class="project-details">
+            <h3>Capstone project</h3>
+            <p>
+              Developed a dynamic, product cart application with authentication
+              and checkout features.
+            </p>
+            <div class="project-links">
+              <a href="#">View Demo</a>
+              <a href="#">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">Project 2</div>
+          <div class="project-details">
+            <h3>Spotify Playlist</h3>
+            <p>
+              Designed and styled a dashboard in React that captures user's
+              playlist through Spotify APIs.
+            </p>
+            <div class="project-links">
+              <a href="#">View Demo</a>
+              <a href="#">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">Project 3</div>
+          <div class="project-details">
+            <h3>Student Enrolment System</h3>
+            <p>
+              Created an enrolment system to track students' course-enrolments
+              and grade performance.
+            </p>
+            <div class="project-links">
+              <a href="#">View Demo</a>
+              <a href="#">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ! End of Projects section -->
+
     <!-- Insert HTML syntax here -->
     <!-- ! End of Projects section -->
 
     <!-- ! Start of Contact section -->
+
+     <section id="contact" class="section-padding">
+      <h2>Contact Me</h2>
+      <p>Let's connect!</p>
+      <div class="contact-links">
+        <a href="mailto:john.doe@example.com"> <span>📧</span> Email Me </a>
+        <a href="https://linkedin.com/in/johndoe">
+          <span>🔗</span> LinkedIn Profile
+        </a>
+      </div>
+    </section>
+    <!-- ! End of Contact section -->
+
+    <!-- ! Start of Footer -->
+    <footer>
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copyright">&copy; 2025 John Doe. All rights reserved.</p>
+    </footer>
     <!-- Insert HTML syntax here -->
     <!-- ! End of Contact section -->
 
